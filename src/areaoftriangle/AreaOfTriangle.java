@@ -49,7 +49,7 @@ public class AreaOfTriangle {
         b = Double.parseDouble(bStr);
         
         //Determine the area with the method User chose
-        if (input == "H")
+        if (input.equals("T"))
         {   
             angleCStr = JOptionPane.showInputDialog("Please Enter The Third Angle of The Triangle:");
             C = Double.parseDouble(angleCStr);
@@ -58,7 +58,7 @@ public class AreaOfTriangle {
             JOptionPane.showMessageDialog(null,"The are of the triangle is " + areaTwo);
             
         }
-        if (input == "T")
+        else
         {  
             cStr = JOptionPane.showInputDialog("Please Enter The Third Side of The Triangle:");
             c = Double.parseDouble(cStr);
